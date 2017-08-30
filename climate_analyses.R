@@ -123,6 +123,7 @@ ggplot(combined, aes(date, tmax, col = site)) + geom_line() + theme_classic() +
   geom_line(aes(date, movaver, col = site), size = 1.7) #+ 
   #scale_color_manual("Lines", values = c("darkred", "darkblue"))
  ggsave("Fig2.tiff", width = 40, height = 20, units = "cm")
+ ggsave("Fig2.png", width = 40, height = 20, units = "cm")
    
  
 # geom_smooth(span = 0.2,  aes(fill = site), alpha = 0.5) +
